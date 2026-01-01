@@ -11,6 +11,7 @@ public class IsSorted {
         if (a.length <= 1) return true;
         // Base case 2: reached the end and all is good
         if (i == a.length - 1) return true;
+        
         boolean currentSorted = a[i] <= a[i + 1];
         return currentSorted && isSorted(a, i+1); 
     }
